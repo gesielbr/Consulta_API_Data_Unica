@@ -12,5 +12,13 @@
 
 <button (click)="editUser()">Editar</button> -->
 
-<app-input [inicial]="10"></app-input>
+<app-input
+  [inicial]="0"
+  [step]="10"
+  [minValorInicial]="0"
+  [maxValorInicial]="60"
+  [placeholder]="'Quantity Required'"
+  [disabled]="false"
+  (onChangeValorInicial)="valorInicialAtualizado($event)"
+></app-input>
 <router-outlet></router-outlet>

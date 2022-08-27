@@ -1,8 +1,16 @@
-<div class="input">
+<div class="input" #containerInput>
   <div class="icon">%</div>
-  <input [value]="valorInicial" type="number" placeholder="Quantity" />
+  <input
+    [value]="valorInicial"
+    type="number"
+    (keyup)="ehValido($event)"
+    [disabled]="disabled"
+    [placeholder]="placeholder"
+    (focus)="onFocus($event)"
+    (blur)="onBlur($event);ehValido($event)"
+  />
   <div class="actions">
-    <div>U</div>
-    <div>D</div>
+    <div (click)="somar()">U</div>
+    <div (click)="diminuir()">D</div>
   </div>
 </div>

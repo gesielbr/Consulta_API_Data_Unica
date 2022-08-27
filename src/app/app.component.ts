@@ -72,4 +72,8 @@ export class AppComponent implements OnInit {
         },
       });
   }
+
+  valorInicialAtualizado(valorAtualizado: number) {
+    console.log('Hey, valor mudou: ', valorAtualizado);
+  }
 }
