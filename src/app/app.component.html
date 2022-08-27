@@ -1,4 +1,16 @@
-<ul>
-  <li></li>
+<!-- <ul *ngFor="let block of timelineBlock">
+  <li>
+    {{ block.date }}
+    <ul>
+      <li *ngFor="let user of block.filteredUser">
+        {{ user.username }}, {{ user.date }}
+      </li>
+    </ul>
+  </li>
 </ul>
+<button (click)="saveUser()">Salvar</button>
+
+<button (click)="editUser()">Editar</button> -->
+
+<app-input [inicial]="10"></app-input>
 <router-outlet></router-outlet>

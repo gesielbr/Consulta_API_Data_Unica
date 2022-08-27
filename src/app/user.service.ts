@@ -12,4 +12,12 @@ export class UserService {
   getUsers(): Observable<User[]> {
     return this.http.get<User[]>('http://localhost:3000/users');
   }
+
+  saveUsers(user: User): Observable<any> {
+    return this.http.post('http://localhost:3000/users', user);
+  }
+
+  editUser(user: User, id: number): Observable<User> {
+    return this.http.put<User>('http://localhost:3000/users/' + id, user);
+  }
 }

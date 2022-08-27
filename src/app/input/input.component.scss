@@ -1,0 +1,42 @@
+.input {
+  display: flex;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: 240px;
+  border-color: #000;
+  overflow: hidden;
+}
+
+.input:hover,
+.input input:hover,
+.actions:hover {
+  background: #eee;
+}
+
+.input input {
+  border: none;
+  outline: none;
+}
+
+.icon {
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.actions div {
+  background: #ccc;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  // opacity: 1;
+  display: none;
+}
